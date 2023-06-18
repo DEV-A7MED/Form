@@ -13,7 +13,7 @@ router.post("/signUp",validation(validators.signUpSchema),asyncHandler(authContr
 //LOGIN ROUTER
     // api/auth/logIn
 router.post("/logIn",validation(validators.logInSchema),asyncHandler(authController.logIn))
-router.get("/",asyncHandler(authController.getAllUsers))
+
 
 
 export default router

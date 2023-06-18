@@ -63,13 +63,10 @@ const logIn=async(req,res,nxt)=>{
     })
 
 }
-const getAllUsers=async(req,res,nxt)=>{
-    const users=await userModel.find();
-    res.status(200).json({message:" done",users})
-}
+
 
 export{
     signUp,
     logIn,
-    getAllUsers
+
 }
